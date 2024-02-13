@@ -11,15 +11,19 @@
 
 body {
   background-color: $snow;
-  @include center($min-height: 100vh);
-  height: 100vh;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 480px) {
   body {
     background-color: $white;
     min-height: 0;
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

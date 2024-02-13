@@ -1,11 +1,3 @@
-@mixin center($min-height: 100vh, $align: center, $justify: center) {
-  min-height: $min-height;
-  height: 100%;
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
 @mixin flex($flex-dir: row, $justify: center, $align: center, $gap: 0px) {
   display: flex;
   flex-direction: $flex-dir;
