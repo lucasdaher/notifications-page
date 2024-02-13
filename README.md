@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code](https://github.com/lucasdaher/notifications-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://lucasdahernotificationspage.netlify.app](https://lucasdahernotificationspage.netlify.app)
 
 ### Built with
 
