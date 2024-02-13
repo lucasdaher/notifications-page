@@ -10,13 +10,15 @@
 }
 
 body {
-  background: $snow;
-  @include center;
+  background-color: $snow;
+  @include center($min-height: 100vh);
+  height: 100vh;
 }
 
 @media screen and (max-width: 480px) {
   body {
-    background: $white;
-    @include center($min-height: 0, $align: flex-start, $justify: center);
+    background-color: $white;
+    min-height: 0;
+    display: inline;
   }
 }
