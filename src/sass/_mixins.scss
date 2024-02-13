@@ -1,5 +1,6 @@
 @mixin center($min-height: 100vh, $align: center, $justify: center) {
   min-height: $min-height;
+  height: 100%;
   display: flex;
   justify-content: $justify;
   align-items: $align;
