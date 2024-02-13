@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./public/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Source Code](https://github.com/lucasdaher/notifications-page)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
@@ -38,7 +38,11 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- [React](https://reactjs.org/) - JS library
+- React Hooks
+- [React Router Dom](https://reactrouter.com/en/main)
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [SASS](https://sass-lang.com/)
 
 ## Author
 
