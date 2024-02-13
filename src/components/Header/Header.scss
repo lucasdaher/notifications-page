@@ -1,0 +1,73 @@
+@use '../../sass/mixins'as *;
+@use '../../sass/colors'as *;
+
+.notifications {
+  &__header {
+    @include flex($justify: space-between);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $dark-gray-blue;
+
+    &__value {
+      background: $blue;
+      color: $white;
+      padding: 0.25rem 0.69rem;
+      border-radius: 0.375rem;
+
+      font-size: 1rem;
+      font-weight: 800;
+      margin-left: 0.69rem;
+    }
+  }
+
+  &__button {
+    button {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: 0;
+      background: transparent;
+      color: $gray-blue;
+
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notifications {
+    padding: 0 1rem;
+
+    &__header {
+      padding: 1.5rem 0;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+
+      &__value {
+        margin-left: 0.56rem;
+      }
+    }
+
+    &__button {
+      button {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

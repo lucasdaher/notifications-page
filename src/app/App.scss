@@ -1,0 +1,27 @@
+@use '../sass/colors'as*;
+@use '../sass/mixins'as*;
+
+.notifications {
+  background: $white;
+  width: 45.725rem;
+  height: auto;
+
+  border-radius: 0.9375rem;
+  box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
+
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .notifications {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notifications {
+    width: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,23 @@
+@use './sass/fontFamily'as*;
+@use './sass/colors'as*;
+@use './sass/mixins'as*;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $plus-jakarta-sans;
+}
+
+body {
+  background: $snow;
+  @include center;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    min-height: none;
+    background: $white;
+    @include center($min-height: 100vh, $align: flex-start, $justify: center);
+  }
+}

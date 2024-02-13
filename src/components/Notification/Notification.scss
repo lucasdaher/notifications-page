@@ -1,0 +1,105 @@
+@use '../../sass/mixins'as *;
+@use '../../sass/colors'as *;
+
+.notifications {
+  &-container {
+    padding: 2rem 0 0 0;
+  }
+}
+
+.notification:last-child {
+  margin-bottom: 0;
+}
+
+.notification {
+  margin-bottom: 0.5rem;
+  background: transparent;
+  @include flex($align: flex-start, $justify: flex-start, $gap: 1.19rem);
+  padding: 1.13rem 1.25rem;
+  border-radius: 0.5rem;
+
+  &__profile {
+    &__photo {
+      width: 2.8125rem;
+    }
+  }
+
+  &__private-message {
+    border-radius: 0.3125rem;
+    border: 1px solid $very-light-gray-blue;
+    background: transparent;
+    color: $gray-blue;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1.25rem;
+    margin-left: 5.25rem;
+    cursor: pointer;
+    @include transition;
+  }
+
+  &__private-message:hover {
+    border: 1px solid $very-light-gray-blue;
+    background: $light-gray-blue;
+  }
+
+  &__publishTime {
+    color: $gray-blue-variation;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__content {
+    height: auto;
+    @include flex($flex-dir: column, $align: flex-start);
+
+    &__action {
+      color: $gray-blue;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      cursor: pointer;
+      @include transition;
+    }
+
+    &__action:hover {
+      color: $blue;
+    }
+
+    &__message {
+      // @include flex($gap: 0.38rem);
+      color: $gray-blue;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      &__name {
+        color: $dark-gray-blue;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        cursor: pointer;
+        @include transition;
+      }
+
+      &__name:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notifications {
+    &-container {
+      padding: 0 0 1rem 0;
+    }
+  }
+}

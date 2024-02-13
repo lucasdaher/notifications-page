@@ -1,0 +1,18 @@
+@mixin center($min-height: 100vh, $align: center, $justify: center) {
+  min-height: $min-height;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex($flex-dir: row, $justify: center, $align: center, $gap: 0px) {
+  display: flex;
+  flex-direction: $flex-dir;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin transition($type: all, $time: 0.2s, $ease: ease) {
+  transition: $type $time $ease;
+}
